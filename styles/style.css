@@ -68,7 +68,7 @@ header {
 /* NAVIGATION */
 
 nav {
-    float:right;
+    float: right;
     padding: 25px 20px 0 0;
 }
 
@@ -91,7 +91,6 @@ nav ul li {
     font-family: 'Alegreya', sans-serif;
     font-size: 150%;
     display: inline-block;
-    float: left;
     padding:10px;
 }
 
@@ -121,7 +120,7 @@ nav ul li a:hover {
 }
 
 .one-fourth {
-    width: 50%;
+    width: 25%;
     float: left;
     text-align: center;
 }
@@ -134,9 +133,9 @@ nav ul li a:hover {
     background-color: rgb(87, 151, 71);
 }
 
-/*#socials {
+#socials {
     background-color: rgb(95, 226, 220);
-}*/
+}
 
 .one-fourth i {
     color: #F0F0F0;
@@ -205,5 +204,157 @@ aside {
 }
 
 .one-third {
+    width: 33.333333%;
+    float: left;
+    text-align: center;
+}
 
+#comp {
+    background-color: rgb(5, 19, 31);
+}
+
+#placeh1 {
+    background-color: rgb(25, 57, 85);
+}
+
+#placeh2 {
+    background-color: rgb(5, 19, 31);
+}
+
+.inner-wrapper-4 {
+    float: left;
+    width: 100%;
+    background-color: rgb(90, 130, 156);
+}
+
+.inner-wrapper-4 img {
+    width: 75%;
+    height: 75%;
+    padding: 5% 0 5% 10%;
+}
+
+/* FOOTER START */
+
+footer {
+    background-color: rgb(90, 130, 156);
+    width: 100%;
+}
+
+.social {
+    list-style-type: none;
+    text-align: center;
+}
+
+.social li {
+    display: inline;
+}
+
+.social i {
+    font-size: 460%;
+    margin: 1%;
+    padding: 5% 5% 5% 4%;
+    color: rgb(175, 212, 226);
+}
+
+.social i:hover {
+    color: #F5F5F5;
+}
+
+footer.second {
+    border-top: 1px solid #AADCD2;
+    background-color: rgb(50, 76, 94);
+    max-height: 60px;
+    margin: 0;
+}
+
+footer.second p {
+    text-align: center;
+    padding: 5px 0 9px 0;
+}
+
+/* MEDIA QUERY START */
+
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 150%;
+    }
+
+    h3 {
+        font-size: 125%;
+    }
+
+    p {
+        font-size: 120%;
+    }
+
+    header {
+        position: absolute;
+    }
+
+    #logo {
+        margin: 15px 0 20px -25px;
+        background: url(../img/6m_mobile.png) no-repeat center;
+    }
+
+    #menu-icon {
+        display: inline-block;
+    }
+
+    nav ul, nav:active ul {
+        display: none;
+        z-index: 1000;
+        position: absolute;
+        padding: 20px;
+        background: rgb(90, 130, 156);
+        right: 20px;
+        top: 60px;
+        border: 1px solid #fff;
+        border-radius: 5px 0 5px 5px;
+        width: 50%;
+    }
+
+    nav:hover ul {
+        display: block;
+    }
+
+    nav li {
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .banner {
+        padding-top: 86px;
+    }
+
+    .one-fourth {
+        float: left;
+        width: 100%;
+    }
+
+    .one-fourth i {
+        font-size: 350%;
+        padding: 4% 0 1% 0;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    .lvl {
+        display: none;
+    }
+
+    .one-third {
+        float: left;
+        width: 100%;
+    }
+
+    .social i {
+        font-size: 200%;
+    }
 }
