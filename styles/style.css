@@ -70,6 +70,7 @@ header {
 nav {
     padding: 25px 20px 0 0;
     text-align: center;
+
 }
 
 #menu-icon {
@@ -120,9 +121,10 @@ nav ul li a:hover {
 }
 
 .one-fourth {
-    width: 25%;
+    width: 100%;
     float: left;
     text-align: center;
+    height: 300px;
 }
 
 #started {
@@ -140,7 +142,7 @@ nav ul li a:hover {
 .one-fourth i {
     color: #F0F0F0;
     font-size: 500%;
-    padding: 13% 0 4% 0;
+    padding: 2% 0 0 0;
 }
 
 .inner-wrapper {
@@ -171,13 +173,13 @@ aside {
     background-color: #A2B1C1;
 }
 
-#started:hover{
+/*#started:hover{
     background-color: rgb(214, 157, 0);
 }
 
 #begin:hover{
     background-color: rgb(100, 173, 81);
-}
+}*/
 
 .inner-wrapper-2 {
     float: left;
