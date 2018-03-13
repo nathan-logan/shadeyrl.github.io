@@ -125,6 +125,7 @@ nav ul li a:hover {
     float: left;
     text-align: center;
     height: 300px;
+    margin-top: 10px;
 }
 
 #started {
