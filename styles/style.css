@@ -47,7 +47,7 @@ img {
 }
 
 header {
-    background-color: rgb(90, 130, 156);
+    background-color: rgb(37, 36, 36);
     width: 100%;
     height: 86px;
 }
@@ -112,7 +112,7 @@ nav ul li a:hover {
 
 .banner {
     width: 100%;
-    background-color: rgb(90, 130, 156);
+    background-color: rgb(37, 36, 36);
 }
 
 .banner-inner {
@@ -125,7 +125,6 @@ nav ul li a:hover {
     float: left;
     text-align: center;
     height: 300px;
-    margin-top: 10px;
 }
 
 #started {
@@ -136,9 +135,9 @@ nav ul li a:hover {
     background-color: rgb(87, 151, 71);
 }
 
-#socials {
+/*#socials {
     background-color: rgb(95, 226, 220);
-}
+}*/
 
 .one-fourth i {
     color: #F0F0F0;
@@ -149,7 +148,7 @@ nav ul li a:hover {
 .inner-wrapper {
     float: left;
     width: 100%;
-    background-color: rgb(90, 130, 156);
+    background-color: rgb(70, 66, 66);
 }
 
 article {
@@ -160,7 +159,7 @@ article {
 }
 
 #hubs {
-    background-color: rgb(90, 130, 156);
+    background-color: rgb(70, 66, 66);
 }
 
 aside {
@@ -171,7 +170,7 @@ aside {
 }
 
 #hubs2 {
-    background-color: #A2B1C1;
+    background-color: rgb(37, 36, 36);
 }
 
 /*#started:hover{
@@ -185,26 +184,26 @@ aside {
 .inner-wrapper-2 {
     float: left;
     width: 100%;
-    background-color: rgb(90, 130, 156);
+    background-color: rgb(70, 66, 66);
 }
 
 #lvl {
-    background-color: rgb(240, 133, 133);
+    background-color: rgb(37, 36, 36);
 }
 
 #lvl2 {
-    background-color: rgb(90, 130, 156);
+    background-color: rgb(70, 66, 66);
 }
 
 #client {
-    background-color: rgb(31, 136, 101);
+    background-color: rgb(37, 36, 36);
 }
 
-.inner-wrapper-3 {
+/*.inner-wrapper-3 {
     float: left;
     width: 100%;
-    background-color: rgb(14, 41, 59)
-}
+    background-color: rgb(14, 41, 59);
+}*/
 
 .one-third {
     width: 33.333333%;
@@ -227,7 +226,7 @@ aside {
 .inner-wrapper-4 {
     float: left;
     width: 100%;
-    background-color: rgb(90, 130, 156);
+    background-color: rgb(70, 66, 66);
 }
 
 .inner-wrapper-4 img {
