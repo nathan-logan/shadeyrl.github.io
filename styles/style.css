@@ -1,9 +1,11 @@
 @import "https://fonts.googleapis.com/css?family=Alegreya+Sans";
+@import "https://fonts.googleapis.com/css?family=Open+Sans";
 
 * {
     margin: 0;
     padding: 0;
     border: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -14,7 +16,7 @@ body {
 
 h2 {
     color: #F5F5F5;
-    font-size: 250%;
+    font-size: 200%;
     font-weight: 700;
     text-align: center;
     padding-top: 2%;
@@ -22,7 +24,7 @@ h2 {
 }
 
 h3 {
-    font-size: 175%;
+    font-size: 155%;
     font-weight: 400;
     line-height: 155%;
     padding: 5% 0;
@@ -31,10 +33,9 @@ h3 {
 
 p {
     font-family: 'Alegreya', sans-serif;
-    font-size: 160%;
+    font-size: 130%;
     line-height: 150%;
     padding: 3%;
-    text-indent: 2%;
     text-align: justify;
     color: #F5F5F5;
 }
@@ -162,6 +163,36 @@ article {
     background-color: rgb(70, 66, 66);
 }
 
+#hubs img {
+    width: 90%;
+    height: 75%;
+    padding: 5% 0 5% 5%;
+}
+
+#hubs2 .step1 {
+    color: rgb(0, 110, 255);
+}
+
+#lvl h2 {
+    border-bottom: 5px solid rgb(0, 110, 255);
+    padding-bottom: 10px;
+}
+
+#lvl .step2 {
+    color: rgb(0, 110, 255);
+}
+
+#lvl2 img {
+    width: 60%;
+    height: 75%;
+    padding: 5% 0 5% 10%;
+}
+
+#hubs2 h2 {
+    border-bottom: 5px solid rgb(0, 110, 255);
+    padding-bottom: 10px;
+}
+
 aside {
     float: right;
     margin: 0 auto;
@@ -173,13 +204,10 @@ aside {
     background-color: rgb(37, 36, 36);
 }
 
-/*#started:hover{
-    background-color: rgb(214, 157, 0);
+#hubs2 a {
+    color: orange;
+    text-decoration: none;
 }
-
-#begin:hover{
-    background-color: rgb(100, 173, 81);
-}*/
 
 .inner-wrapper-2 {
     float: left;
@@ -197,6 +225,24 @@ aside {
 
 #client {
     background-color: rgb(37, 36, 36);
+}
+
+#client .step3 {
+    color: rgb(0, 110, 255);
+}
+
+#client h2 {
+    border-bottom: 5px solid rgb(0, 110, 255);
+    padding-bottom: 10px;
+}
+
+#client a {
+    color:orange;
+    text-decoration: none;
+}
+
+#client i {
+    padding-left: 25%;
 }
 
 /*.inner-wrapper-3 {
@@ -230,9 +276,97 @@ aside {
 }
 
 .inner-wrapper-4 img {
-    width: 75%;
-    height: 75%;
-    padding: 5% 0 5% 10%;
+    width: 95%;
+    height: 100%;
+    padding: 5% 2% 0 2%;
+}
+
+.inner-wrapper-5 {
+    position: relative;
+    float: left;
+    width: 100%;
+    background-color: rgb(70, 66, 66);
+}
+
+.inner-wrapper-5 article {
+    float: right;
+    clear: right;
+}
+
+.inner-wrapper-5 img {
+    width: 90%;
+    padding: 3% 2% 0 5%;
+}
+
+#discord {
+    background-color: rgb(37, 36, 36);
+}
+
+#flag {
+    height: 2%;
+    width: 2%;
+    display: inline;
+    padding: 1%;
+}
+
+.step4 {
+    color: rgb(0, 110, 255);
+}
+
+#discord h2 {
+    border-bottom: 5px solid rgb(0, 110, 255);
+    padding-bottom: 10px;
+}
+
+#disclink {
+    text-decoration: none;
+    color: orange;
+}
+
+#discDL {
+    text-decoration: none;
+    color: orange;
+}
+
+#authimg {
+    margin: 10% 0 0 29%;
+}
+
+.inner-wrapper-6 {
+    position: relative;
+    float: left;
+    width: 100%;
+    background-color: rgb(70, 66, 66);
+}
+
+#linkauth {
+    padding: 1% 0 0 15%;
+}
+
+.inner-wrapper-7 {
+    position: relative;
+    float: left;
+    width: 100%;
+    background-color: rgb(70, 66, 66);
+}
+
+.inner-wrapper-7 img {
+    width: 65%;
+    padding: 3% 2% 0 20%;
+}
+
+.inner-wrapper-7 article {
+    float: right;
+    clear: right;
+}
+
+#rules {
+    background-color: rgb(37, 36, 36);
+}
+
+#ruleset {
+    text-decoration: none;
+    color: orange;
 }
 
 /* FOOTER START */
