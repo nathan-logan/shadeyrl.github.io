@@ -112,7 +112,41 @@ nav ul li a:hover {
 
 /* END NAVIGATION */
 
+/* ---------START EXPAND--------- */
+
+#expand {
+    width: 100%;
+    visibility: hidden;
+    max-height: 0;
+    opacity: 0;
+    -webkit-transition: height .1s ease-in-out,
+    visibility .3s,
+    opacity .3s;
+}
+
+.collapse-open:checked ~ #expand {
+    max-height: 100%;
+    opacity: 100;
+    visibility: visible
+}
+
+.collapse-btn {
+    width: 100%;
+    border-top: 1px solid #e0e0e0;
+    display: block;
+    margin-bottom: 0;
+    color: #4285f4;
+    transition: background-color .2s ease;
+}
+
+.collapse-btn:hover {
+    background: #eee;
+}
+
+/* ---------END EXPAND--------- */
+
 .banner {
+    visibility: visible;
     width: 100%;
     background-color: rgb(70, 66, 66);
     height: 300px;
@@ -161,7 +195,7 @@ nav ul li a:hover {
 }
 
 article {
-    float: left;
+    float: right;
     margin: 0 auto;
     width: 50%;
     height: auto;
@@ -175,6 +209,11 @@ article {
     width: 90%;
     height: 75%;
     padding: 5% 0 5% 5%;
+}
+
+#hubs2 img {
+    width: 70%;
+    margin: -25% 0 0 15%;
 }
 
 #hubs2 .step1 {
@@ -202,7 +241,7 @@ article {
 }
 
 aside {
-    float: right;
+    float: left;
     margin: 0 auto;
     width: 50%;
     height: auto;
@@ -321,6 +360,20 @@ aside {
     color: rgb(0, 110, 255);
 }
 
+.step5 {
+    color: rgb(0, 110, 255);
+}
+
+.step6 {
+    color: rgb(0, 110, 255);
+}
+
+#rules h2 {
+    border-bottom: 5px solid rgb(0, 110, 255);
+    padding-bottom: 10px;
+}
+
+
 #discord h2 {
     border-bottom: 5px solid rgb(0, 110, 255);
     padding-bottom: 10px;
@@ -380,6 +433,16 @@ aside {
 /* FOOTER START */
 
 footer {
+    background-color: rgb(50, 76, 94);
+    width: 100%;
+}
+
+footer p {
+    text-align: center;
+    padding: 15px;
+}
+
+/*footer {
     background-color: rgb(90, 130, 156);
     width: 100%;
 }
@@ -390,11 +453,11 @@ footer {
 }
 
 .social li {
-    display: inline;
+    display: inline-block;
 }
 
 .social i {
-    font-size: 330%;
+    font-size: 200%;
     margin: 1%;
     padding: 5% 5% 5% 4%;
     color: rgb(175, 212, 226);
@@ -402,19 +465,7 @@ footer {
 
 .social i:hover {
     color: #F5F5F5;
-}
-
-footer.second {
-    border-top: 1px solid #AADCD2;
-    background-color: rgb(50, 76, 94);
-    max-height: 60px;
-    margin: 0;
-}
-
-footer.second p {
-    text-align: center;
-    padding: 5px 0 9px 0;
-}
+}*/
 
 /* MEDIA QUERY START */
 
