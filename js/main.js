@@ -5,6 +5,12 @@ $(document).ready(function(){
     $("#biline").animate({
         opacity: "1"
     });
+    $(".box").animate({
+        opacity: "0.15"
+    });
+    $(".boxdisc").animate({
+        opacity: "0.15"
+    });
 });
 
 $(".box").on("mouseenter", function(){
