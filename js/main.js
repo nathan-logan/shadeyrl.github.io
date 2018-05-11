@@ -8,9 +8,12 @@ $(document).ready(function(){
     $(".box").animate({
         opacity: "0.15"
     });
-    $(".boxdisc").animate({
+    $(".box").animate({
         opacity: "0.15"
     });
+    $(".boxdisc").animate({
+        opacity: "0.15"
+    }, 1500);
     $(".boxplay").animate({
         opacity: "1"
     });

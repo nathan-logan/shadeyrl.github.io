@@ -38,7 +38,8 @@ body {
     font-weight: 800;
     font-size: 60px;
     letter-spacing: 1.5px;
-    transition: 1s ease;
+    transition: 2s ease;
+    -webkit-transition: 2s ease;
 }
 
 #biline {
@@ -46,7 +47,7 @@ body {
     font-size: 30px;
     font-weight: 200;
     transition: 2s ease;
-    transition-delay: 0.5s;
+    -webkit-transition: 2s ease;
 }
 
 .boxes {
@@ -82,8 +83,6 @@ body {
     box-shadow: 1px 1px 39px 3px rgba(0,0,0,0.5);
     -webkit-box-shadow: 1px 1px 39px 3px rgba(0,0,0,0.5);
     -moz-box-shadow: 1px 1px 39px 3px rgba(0,0,0,0.5);
-    transition: 2s ease;
-    transition-delay: 0.5s;
 }
 
 .boxplay {
@@ -98,7 +97,9 @@ body {
     -webkit-box-shadow: 1px 1px 39px 3px rgba(0,0,0,0.5);
     -moz-box-shadow: 1px 1px 39px 3px rgba(0,0,0,0.5);
     transition: 2s ease;
-    transition-delay: 0.5s;
+    transition-delay: 0.2s;
+    -webkit-transition: 2s ease;
+    -webkit-transition-delay: 0.2s;
 }
 
 .boxplay p {
