@@ -11,6 +11,9 @@ $(document).ready(function(){
     $(".boxdisc").animate({
         opacity: "0.15"
     });
+    $(".boxplay").animate({
+        opacity: "1"
+    });
 });
 
 $(".box").on("mouseenter", function(){
