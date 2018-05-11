@@ -1,90 +1,239 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
 
+
+html {
+    background: url("/img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 body {
+    margin: 2.5%;
+}
+
+.container {
     font-family: Roboto;
-    background: #2b5876;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-#container {
-    background-color: #F7F7F7;
-    width: 360px;
-    margin: 100px auto;
-    box-shadow: 0 0 3px rgba(0,0,0, 0.1);
-}
-
-h1 {
-    background-color: #2980E9;
     color: white;
-    margin: 0;
-    padding: 10px 20px;
+    padding: 0;
+    height: 89vh;
+    max-width: 100%;
+    background: #353839;
+    text-align: center;
+    box-shadow: 1px 1px 39px 3px rgba(0,0,0,0.73);
+    -webkit-box-shadow: 1px 1px 39px 3px rgba(0,0,0,0.73);
+    -moz-box-shadow: 1px 1px 39px 3px rgba(0,0,0,0.73);
+}
+
+.main {
+    margin: 0 0 0 0;
+    height: 100%;
+    max-width: 100%;
+    overflow-y: scroll;
     text-transform: uppercase;
-    font-size: 24px;
-    font-weight: normal;
+}
+
+.main h1 {
+    opacity: 0;
+    margin-top: 3%;
+    font-weight: 800;
+    font-size: 60px;
+    letter-spacing: 1.5px;
+    transition: 1.5s ease;
+}
+
+#biline {
+    opacity: 0;
+    font-size: 30px;
+    font-weight: 200;
+    transition: 3s ease;
+    transition-delay: 0.5s;
+}
+
+.boxes {
+    padding: 100px 0 0 0;
+}
+
+.box p {
+    padding: 20px 5px 0 5px;
+    font-size: 22px;
+}
+
+.box {
+    opacity: 0.15;
+    margin: 0 auto;
+    display: block;
+    max-width: 25%;
+    height: 25rem;
+    background-color: #454849;
+    border-radius: 10px;
+    box-shadow: 1px 1px 39px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 1px 1px 39px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: 1px 1px 39px 3px rgba(0,0,0,0.5);
+}
+.box h1 {
+    font-size: 38px;
+}
+
+.getstarted {
+	-moz-box-shadow: 0px 0px 25px -1px #000000;
+	-webkit-box-shadow: 0px 0px 25px -1px #000000;
+	box-shadow: 0px 0px 25px -1px #000000;
+	background-color:#454849;
+	-moz-border-radius:12px;
+	-webkit-border-radius:12px;
+	border-radius:12px;
+	display:inline-block;
+	color:#F7F7F7;
+	font-family:Roboto;
+	font-size:22px;
+	padding:9px 60px;
+    text-decoration:none;
+    border: none;
+}
+.getstarted:hover {
+	background-color:#144922;
+}
+
+#box3 button {
+    margin-top: 60px;
+}
+
+#strong {
+    font-weight: 700;
+}
+
+/* =================================================== 
+                    CUSTOM SCROLL BAR
+   =================================================== */
+
+.main::-webkit-scrollbar-track
+{
+    border-radius: 10px;
+	background-color: #353839;
+}
+
+.main::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #353839;
+}
+
+.main::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,.1);
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.1);
+	background-color: #4c5052;
+}
+
+/* =================================================== 
+                    START NAV BAR 
+   =================================================== */
+
+.nav {
+    font-family: Roboto;
+    float:left;
+    background-color: #101111;
+    width: 130px;
+    height: 89vh;
+    text-transform: uppercase;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px 0 10px 0;
+}
+
+.links i {
+    font-size: 32px;
+    padding: 0 0 15px 0;
+}
+
+.links a:hover {
+    background: #202020;
+}
+
+.logo {
+    width: 130px;
+    height: 130px;
 }
 
 ul {
-    list-style: none;
+    text-align: center;
+    list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-li {
-    background-color: white;
-    height: 40px;
-    line-height: 40px;
-    color: #666;
+.active {
+    background: #202020;
 }
 
-input {
-    border: 3px solid rgba(0,0,0,0);
-    background-color: #F7F7F7;
-    width: 100%;
-    height: 60px;
-    font-size: 18px;
-    padding: 13px 13px 13px 20px;
-    -webkit-box-sizing: border-box;
-    color: #2980E9;
+/* =================================================== 
+                    
+   =================================================== */
+/* 
+body {
+    margin: 1.5%;
+    font-family: roboto;
 }
 
-li:nth-child(2n) {
-    background-color: #F7F7F7;
+.container-fluid {
+    background: #434F56;
+    height: 100%;
 }
 
-li:hover .delete {
-    width: 40px;
-    opacity: 1;
-}
-
-input:focus {
-    background-color: white;
-    border: 3px solid #2980E9;
-    outline: none;
-}
-
-.fa-ellipsis-h {
-    float: right;
-}
-
-.fa-ellipsis-h:hover {
-    color: rgb(223, 223, 223);
-}
-
-.delete {
-    background-color: #E74C3C;
-    height: 40px;
-    margin-right: 20px;
-    text-align: center;
+.container h1 {
     color: white;
-    width: 0px;
-    display: inline-block;
-    transition: 0.2s linear;
-    opacity: 0;
+    background: rgb(219, 70, 87);
+    text-align: center;
+    height: 96px;
+    line-height: 90px;
 }
 
-.checked {
-    text-decoration: line-through;
-    color: gray;
+.container h4 {
+    color: rgb(219, 70, 87);
 }
+
+#navbar {
+    float: left;
+    width: 70px;
+    background: #607886;
+    height: 100%;
+    -webkit-transition: 0.5s ease;
+}
+
+ul {
+    padding: 0 0 0 0;
+    text-align: center;
+}
+
+#navbar-items {
+    width: 70px;
+    -webkit-transition: 0.5s ease;   
+}
+
+.navText {
+    position: relative;
+    display: none;
+}
+
+.icon {
+    font-size: 38px;
+    color: white;
+    background: #556D7B;
+}
+
+.logo img {
+    width: 70px;
+    height: 65px;
+    -webkit-transition: 0.5s ease;  
+    margin-top: -15px;
+}
+
+.icon:hover {
+    background: slateblue;
+}
+*/
