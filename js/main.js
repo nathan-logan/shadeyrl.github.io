@@ -1,6 +1,10 @@
 $(document).ready(function(){
-    $(".headline").animate({opacity: "1"});
-    $("#biline").animate({opacity: "1"});
+    $(".headline").animate({
+        opacity: "1"
+    });
+    $("#biline").animate({
+        opacity: "1"
+    });
 });
 
 $(".box").on("mouseenter", function(){
@@ -10,6 +14,18 @@ $(".box").on("mouseenter", function(){
 });
 
 $(".box").on("mouseleave", function(){
+    $(this).animate({
+        opacity: "0.15",
+    });   
+});
+
+$(".boxdisc").on("mouseenter", function(){
+    $(this).animate({
+        opacity: "1",
+    });   
+});
+
+$(".boxdisc").on("mouseleave", function(){
     $(this).animate({
         opacity: "0.15",
     });   

@@ -70,6 +70,54 @@ body {
     -webkit-box-shadow: 1px 1px 39px 3px rgba(0,0,0,0.5);
     -moz-box-shadow: 1px 1px 39px 3px rgba(0,0,0,0.5);
 }
+
+.boxdisc {
+    opacity: .15;
+    margin: 0 auto;
+    display: block;
+    max-width: 18%;
+    height: 25rem;
+    background-color: #454849;
+    border-radius: 10px;
+    box-shadow: 1px 1px 39px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 1px 1px 39px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: 1px 1px 39px 3px rgba(0,0,0,0.5);
+}
+
+#NA {
+    background-image: url("/img/NA.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#OCE {
+    background-image: url("/img/OCE.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#EU {
+    background-image: url("/img/EU.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#SAM {
+    background-image: url("/img/SAM.png");
+    background-position: center;
+    background-size: cover;
+}
+
+
+#discord {
+    color: #7289da;
+}
+
+.boxdisc h1 {
+    -webkit-text-stroke: 2px black;
+    font-size: 38px;
+}
+
 .box h1 {
     font-size: 38px;
 }
