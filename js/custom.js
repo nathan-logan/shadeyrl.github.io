@@ -10,7 +10,7 @@ $(".btn-expand").on("click", function(){
 });
 
 var countdown = $(".timeleft");
-var seasonEndDate = new Date("May 31, 2018 13:59:00 UTC").getTime();
+var seasonEndDate = new Date("May 31, 2018 23:59:00 UTC").getTime();
 
 // Update every second
 var invtl = setInterval(() => {
