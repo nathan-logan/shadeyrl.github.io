@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html,body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: url("../img/SVG/main-bg.svg") no-repeat;
+    background-size: cover;
+}
+
+.active {
+    border-bottom: 2px solid white;
+}
+
+.navbar-item {
+    color: #fff !important;
+}
+
+.navbar-item:hover {
+    color: #888 !important;
+    background: none !important;
+    border-bottom: 2px solid white;
+}
+
+.navbar {
+    background: none !important;
+}
+
+#navMenu {
+    background: #030A19;
+}
+
+.navbar-container {
+    margin-top: 2em;
+}
+
+.navbar-brand img {
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+}
+
+.title h1{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.5em;
+    padding-bottom: 1em;
+}
+
+.welcome-text {
+    padding: 4em 2em;
+}
+
+.button.is-light {
+    transition: .3s ease;
+}
+
+.button.is-light:hover {
+    background: none !important;
+    color: #666 !important;
+}
+
+.button.is-light:focus {
+    background: none !important;
+    color: #fff !important;
+}
+
+.container h1, .container p {
+    padding: 0 1em;
+}
+
+.svg-image {
+    padding: 12em 0 7em 4em;
+}
+
+.svg-image embed {
+    height: 270px;
+}
+
+/* MEDIA QUEREIES */
+@media(min-width: 1088px){
+    .navbar-brand-centered {
+        z-index: 2;
+        position: absolute;
+        top: -1.5rem;
+        left: 1em;
+    }
+    .navbar-menu {
+        margin-left: 10em;
+    }
+
+    .navbar-start .navbar-item {
+        padding: 0 2em;
+    }
+    .welcome-text {
+        padding: 10em 2em 0 2em;
+    }
+    .svg-image {
+        padding: 15em 0 15em 9em;
+    }
+    
+    .svg-image embed {
+        height: 470px;
+    }
+}
+
