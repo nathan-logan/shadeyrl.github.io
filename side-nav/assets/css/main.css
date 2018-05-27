@@ -1,0 +1,79 @@
+/* global */
+
+html {
+    font-family: helvetica, serif;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    background: url(https://images.pexels.com/photos/674268/pexels-photo-674268.jpeg?cs=srgb&dl=alone-back-view-beautiful-674268.jpg&fm=jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    padding: 7em 0 1em 0;
+    color: #555;
+}
+
+.btn_one {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    background: #f7941d;
+    padding: 1em 7em;
+    border-radius: 5px;
+    opacity: 1.0;
+}
+
+.btn_one:hover {
+    opacity: 0.8;
+}
+
+.open {
+    color: #555;
+    font-size: 30px;
+    float: left;
+    margin: 1em 0 0 1em;
+    display: block;
+    cursor: pointer;
+}
+
+.nav {
+    width: 0;
+    overflow-x: hidden;
+    height: 100vh;
+    z-index: 1;
+    position: fixed;
+    background: rgba(34,65,93,0.9);
+    transition: 0.5s;
+    display: block;
+}
+
+.nav a {
+    clear: left;
+    color: #fff;
+    font-size: 22px;
+    display: block;
+    text-decoration: none;
+    padding: 1em 0;
+    transition: 0.3s;
+}
+
+.close {
+    float: left;
+    margin: 0.9em 0 0 1.6em;
+}
+
+.nav a:not(:first-child):hover {
+    background: #f7941d
+}

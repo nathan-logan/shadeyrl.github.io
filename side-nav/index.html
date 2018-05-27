@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>responsive side nav</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div id="nav" class="nav">
+            <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">The Step</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <span id="open" class="open" onclick="openNav()">&#9776;</span>
+        <h1>Take the first step</h1>
+        <a href="#" class="btn_one">Start</a>
+    </div>
+
+
+    <script>
+    
+    function openNav(){
+        document.getElementById("open").style.display = "none";
+        document.getElementById("nav").style.width = "100%";
+    }
+    function closeNav(){
+        document.getElementById("nav").style.width = "0";
+        document.getElementById("open").style.display = "block";
+    }
+
+    </script>
+</body>
+
+</html>
