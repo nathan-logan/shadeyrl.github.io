@@ -1,3 +1,5 @@
+/* global */
+
 html, body {
     width: 100%;
     height: 100%;
@@ -10,9 +12,14 @@ html, body {
 
 .nav {
     text-align: center;
-    height: 65px;
-    line-height: 65px;
-    background: #fff;
+    height: 55px;
+    width: 100%;
+    line-height: 55px;
+    background: 0;
+    position: fixed;
+    z-index: 999;
+    margin: 0 auto;
+    background-color: rgba(26, 26, 26, 0.7);
 }
 
 .menu {
@@ -20,13 +27,14 @@ html, body {
     grid-gap: 60px;
     grid-template-columns: repeat(5, 130px);
     justify-content: center;
+    background-color: rgba(26, 26, 26, 0.9);
 }
 
 .menu a {
     text-transform: uppercase;
     clear: right;
     text-decoration: none;
-    color: #333;
+    color: #fff;
     font-size: 0.9em;
     font-weight: bold;
 }
@@ -43,6 +51,7 @@ label {
     width: 26px;
     float: right;
     user-select: none;
+    color: #fff;
 }
 
 #toggle {
@@ -50,22 +59,79 @@ label {
 }
 
 .hero {
+    z-index: 1;
+    top: 0;
     width: 100%;
     height: 40em;
-    background: linear-gradient(to top, rgb(15, 82, 124) 0%, rgba(231,56,39,0) 100%), url(https://images8.alphacoders.com/820/820132.jpg);
+    background: linear-gradient(to top, #160a19 0%, rgba(231,56,39,0) 100%), url(https://images8.alphacoders.com/820/820132.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;    
+}
+
+.wrapper h1 {
+    padding-bottom: 1em;
 }
 
 .wrapper {
     color: #fff;
-    /* background: #333; */
-    padding: 15em;
+}
+
+.wrapper .btn {
+    background: rgb(49, 99, 49);
+    opacity: 1.0;
+    color: #fff;
+    border: 0;
+    padding: 0.5em;
+    border-radius: 10px;
+}
+
+.wrapper .btn:hover {
+    opacity: .9;
+}
+
+.wrapper a {
+    text-decoration: none;
+}
+
+#subtitle {
+    font-size: 18px;
+}
+
+.container {
+    margin: 3em 5em;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+    height: 15em;
     text-align: center;
 }
 
-@media only screen and (max-width: 500px) {
+.cards h1 {
+    margin: 0;
+    background: rgb(199, 199, 199);
+    height: 30%;
+    padding: .5em;
+    border-radius: 23px 23px 0 0;
+}
+
+.cards p {
+    padding: 0 1em;
+}
+
+.card1, .card2, .card3 {
+    background: rgb(230, 230, 230);
+    border-radius: 23px;
+}
+
+@media only screen and (max-width: 900px) {
     label {
         display: block;
         cursor: pointer;
@@ -87,7 +153,15 @@ label {
         margin: 0;
     }
 
+    .menu a:first-child {
+        border-top: 1px solid rgb(114, 139, 155);
+    }
+
     #toggle:checked + .menu {
         display: block;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
     }
 }
