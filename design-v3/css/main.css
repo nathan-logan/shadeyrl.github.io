@@ -62,7 +62,7 @@ label {
     z-index: 1;
     top: 0;
     width: 100%;
-    height: 40em;
+    height: 100vh;
     background: linear-gradient(to top, #160a19 0%, rgba(231,56,39,0) 100%), url(https://images8.alphacoders.com/820/820132.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -82,11 +82,12 @@ label {
 }
 
 .wrapper .btn {
-    background: rgb(49, 99, 49);
+    background: rgb(71, 24, 90);
     opacity: 1.0;
     color: #fff;
     border: 0;
     padding: 0.5em;
+    margin: 0 0.5em;
     border-radius: 10px;
 }
 
