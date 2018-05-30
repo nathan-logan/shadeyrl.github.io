@@ -10,6 +10,10 @@ html, body {
     box-sizing: border-box;
 }
 
+.active {
+    border-top: 3px solid rgb(110, 6, 158);
+}
+
 .nav {
     text-align: center;
     height: 55px;
@@ -62,7 +66,7 @@ label {
     z-index: 1;
     top: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background: linear-gradient(to top, #160a19 0%, rgba(231,56,39,0) 100%), url(https://images8.alphacoders.com/820/820132.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -103,34 +107,227 @@ label {
     font-size: 18px;
 }
 
-.container {
-    margin: 3em 5em;
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2em;
-    height: 15em;
+footer {
+    background: #160a19;
+    color: #fff;
+    width: 100%;
     text-align: center;
 }
 
-.cards h1 {
+footer p {
+    padding: 1em;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(174, 80, 211);
+}
+
+footer a:hover {
+    color: rgb(237, 183, 255);
+}
+
+/* ABOUT PAGE */
+
+.hero-about {
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    min-height: 550px;
+    background: linear-gradient(to top, #160a19 0%, rgba(231,56,39,0) 100%), url(/img/controller.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;    
+}
+
+.wrapper-about h1 {
+    padding-bottom: 1em;
+}
+
+.wrapper-about {
+    color: #fff;
+}
+
+.wrapper-about .btn {
+    background: rgb(71, 24, 90);
+    opacity: 1.0;
+    color: #fff;
+    border: 0;
+    padding: 0.5em;
+    margin: 0 0.5em;
+    border-radius: 10px;
+}
+
+.wrapper-about .btn:hover {
+    opacity: .9;
+}
+
+.wrapper-about a {
+    text-decoration: none;
+}
+
+/* ABOUT PAGE - TIMELINE */
+
+.tl-container {
+    text-align: center;
+    margin: 3.7em 14em ;
+    background: rgb(238, 238, 238);
+}
+
+.tl-container h1 {
+    padding: 1em 0;
+    background: rgb(46, 13, 83);
+    color: #fff;
+}
+
+.tl-container p {
+    padding: 2em 12em;
+    font-size: 20px;
+}
+
+/* timeline */
+
+.timeline {
+    position: relative;
+    margin: 50px auto;
+    padding: 40px 0;
+    width: 1000px;
+    box-sizing: border-box;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 97%;
+    background: #c5c5c5;
+}
+
+.timeline ul {
     margin: 0;
-    background: rgb(199, 199, 199);
-    height: 30%;
-    padding: .5em;
-    border-radius: 23px 23px 0 0;
+    padding: 0;
 }
 
-.cards p {
-    padding: 0 1em;
+.timeline ul li {
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    list-style: none;
+    box-sizing: border-box;
 }
 
-.card1, .card2, .card3 {
-    background: rgb(230, 230, 230);
-    border-radius: 23px;
+.timeline ul li:nth-child(odd) {
+    float: left;
+    text-align: right;
+    clear: both;
 }
+
+.timeline ul li:nth-child(even) {
+    float: right;
+    text-align: left;
+    clear: both;
+}
+
+.content {
+    padding-bottom: 20px;
+}
+
+.content a {
+    color: rgba(88, 24, 160, 1);
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.content a:hover {
+    color: rgba(88, 24, 160, 0.5);
+}
+
+.timeline ul li:nth-child(odd):before {
+    content: '';
+    position: absolute;
+    top: 24px;
+    right: -6px;
+    width: 10px;
+    height: 10px;
+    background: rgba(88, 24, 160, 1);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(88, 24, 160, 0.2);
+}
+
+.timeline ul li:nth-child(even):before {
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: -4px;
+    width: 10px;
+    height: 10px;
+    background: rgba(88, 24, 160, 1);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(88, 24, 160, 0.2);
+}
+
+.timeline ul li h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    color: rgba(88, 24, 160, 1);
+}
+
+.timeline ul li p {
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+.timeline ul li .time h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.timeline ul li:nth-child(odd) .time {
+    position: absolute;
+    top: 12px;
+    right: -165px;
+    margin: 0;
+    padding: 8px 16px;
+    background: rgba(88, 24, 160, 1);
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(88, 24, 160, 0.2);
+}
+
+.timeline ul li:nth-child(even) .time {
+    position: absolute;
+    top: 12px;
+    left: -165px;
+    margin: 0;
+    padding: 8px 16px;
+    background: rgba(88, 24, 160, 1);
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px rgba(88, 24, 160, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 900px) {
     label {
