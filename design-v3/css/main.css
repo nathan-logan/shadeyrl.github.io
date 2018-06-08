@@ -82,7 +82,7 @@ label {
     top: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, #160a19 0%, rgba(231,56,39,0) 100%), url(/img/rl-bg.jpg);
+    background: linear-gradient(to top, #160a19 0%, rgba(231,56,39,0) 100%), url("https://shadeyrl.github.io/design-v3/img/rl-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -149,7 +149,7 @@ footer a:hover {
     top: 0;
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(to top, #160a19 0%, rgba(231,56,39,0) 100%), url(/img/controller.jpeg);
+    background: linear-gradient(to top, #160a19 0%, rgba(231,56,39,0) 100%), url("https://shadeyrl.github.io/design-v3/img/controller.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -205,7 +205,7 @@ footer a:hover {
 .tl-container {
     text-align: center;
     margin: 3.7em 14em ;
-    background: rgb(216, 216, 216);
+    background: #fff;
     box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.3);
 }
 
