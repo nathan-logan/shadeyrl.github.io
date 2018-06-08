@@ -8,10 +8,14 @@ html, body {
     font-family: Helvetica, sans-serif;
     /* background: #5B7382; */
     box-sizing: border-box;
+    background: #614385;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #516395, #614385);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #516395, #614385); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .active {
-    border-top: 3px solid rgb(110, 6, 158);
+    border-bottom: 3px solid rgb(110, 6, 158);
 }
 
 .nav {
@@ -24,6 +28,16 @@ html, body {
     z-index: 999;
     margin: 0 auto;
     background-color: rgba(26, 26, 26, 0.7);
+    transition: 0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out;
+}
+
+.nav:hover {
+    opacity: 1;
+}
+
+.scrolled {
+    opacity: .4;
 }
 
 .menu {
@@ -45,6 +59,7 @@ html, body {
 
 .menu a:hover {
     color: #777;
+    border-bottom: 3px solid rgb(110, 6, 158);
 }
 
 label {
@@ -67,7 +82,7 @@ label {
     top: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, #160a19 0%, rgba(231,56,39,0) 100%), url(https://images8.alphacoders.com/820/820132.jpg);
+    background: linear-gradient(to top, #160a19 0%, rgba(231,56,39,0) 100%), url(/img/rl-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -133,7 +148,7 @@ footer a:hover {
     z-index: 1;
     top: 0;
     width: 100%;
-    min-height: 550px;
+    min-height: 100vh;
     background: linear-gradient(to top, #160a19 0%, rgba(231,56,39,0) 100%), url(/img/controller.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -170,12 +185,28 @@ footer a:hover {
     text-decoration: none;
 }
 
+.arrow {
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+}
+
+.arrow:hover {
+    font-size: 23px;
+    transition: 0.2s ease;
+    -webkit-transition: 0.2s ease;
+}
+
 /* ABOUT PAGE - TIMELINE */
 
 .tl-container {
     text-align: center;
     margin: 3.7em 14em ;
-    background: rgb(238, 238, 238);
+    background: rgb(216, 216, 216);
+    box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.3);
 }
 
 .tl-container h1 {
